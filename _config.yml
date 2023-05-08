@@ -1,14 +1,15 @@
 nav:
-  Home: /home/
-  About: /about/
-  Writing: /archives/
-  Projects: http://github.com/tzvetkov75
+  Home: https://kpl0111.github.io
+  Blog: /
+  Timeline: /archives/
+  Github: https://github.com/kpl0111
+  About: https://kpl0111.github.io/about
 
-projects_url: http://github.com/tzvetkov75
+projects_url: https://github.com/kpl0111
 
 customize:
     gravatar:
-        email: 
+        email: kunpengl0111@gmail.com
     logo:
         enabled: true
         width: 50
@@ -21,16 +22,14 @@ customize:
         url: /images/favicon.ico
         gravatar: false
       android:
-        url: /images/favicon-192x192.png
+        url: /images/favicon.ico
         gravator: false
       apple:
-        url: /images/apple-touch-icon.png
+        url: /images/favicon.ico
         gravator: false
     social_links:
-        github: https://github.com/tzvetkov75/solar-theme-hexo
-        twitter: /
-        facebook: /
-        linkedin: /
+        github: https://github.com/kpl0111
+        twitter: https://twitter.com/Nefelib31847846
     post_count: 5
     highlight: lightcode
 

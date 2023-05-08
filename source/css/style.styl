@@ -5,10 +5,87 @@
 
 global-reset()
 
+* {
+  cursor:url(https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur),auto!important;
+}
+
+/* 定义两种不同的鼠标样式 */
+.cursor-default {
+  cursor: url(https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur), auto!important;
+}
+
+.cursor-pointer {
+  cursor: url(https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/pointer.cur), auto!important;
+}
+
+/* 将默认鼠标样式分配给 a 元素 */
+a {
+  /* 你原来的样式 */
+  cursor: url(https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur), auto!important;
+}
+
+/* 当鼠标悬停在 a 元素上时，将鼠标样式更改为指针样式 */
+a:hover {
+  cursor: url(https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/pointer.cur), auto!important;
+}
+
+/* Webkit浏览器（Chrome，Safari等）*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 20px;
+  border: 3px solid #f5f5f5;
+}
+
+/* Firefox浏览器 */
+::-moz-scrollbar {
+  width: 12px;
+}
+
+::-moz-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 20px;
+  border: 3px solid #f5f5f5;
+}
+
+/* IE浏览器 */
+::-ms-scrollbar {
+  width: 12px;
+}
+
+::-ms-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-ms-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 20px;
+  border: 3px solid #f5f5f5;
+}
+
+/* 全局设置 */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #f5f5f5;
+}
+
+
 *,
 *:before,
 *:after
   box-sizing: border-box
+
 
 html
   height: 100%
@@ -30,6 +107,52 @@ body
   padding: 0
   height: auto
   width: 100%
+
+.paginator {
+    font-size: 0.875rem;
+    width: 60%;
+    margin: 0 auto 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px; /* 加入 gap 属性，设置元素之间的间距 */
+}
+
+.paginator * {
+    display: inline;
+    padding: 6px 12px; /* 调整内边距，紧凑一点 */
+    border-radius: 18px;
+    background: #fff;
+    border: none; /* 删除边框 */
+}
+
+.paginator .space {
+    display: inline;
+    padding: 6px 12px;
+    border-radius: 18px;
+    background: #fff;
+    border: none;
+}
+
+.paginator a {
+    margin: 4px;
+    color: green; /* 将字体颜色修改为绿色 */
+    transition: color ease-in-out .5s;
+}
+
+.paginator a:hover {
+    color: white;
+    background-color: green; /* 鼠标悬停时字体变白，背景色变绿色 */
+    transition: color ease-in-out .5s, background-color ease-in-out .5s;
+}
+
+.paginator .current {
+    color: white;
+    background-color: green; /* 当前页的字体和背景色都为绿色 */
+    border: none;
+}
 
 .content
   flex: 1

@@ -4,45 +4,49 @@
 
 A responsive, dark and simple blog theme for [Hexo](http://hexo.io)
 
+I have made some modifications and improvements on the basis of the author's theme.
+
+- based on theme [solar-theme-hexo](https://github.com/tzvetkov75/solar-theme-hexo) by [tzvetkov75](https://github.com/tzvetkov75)
 - based on theme [cactus dark](https://github.com/probberechts/cactus-dark.git) by Pieter Robberechts
-- using [Full CSS 3D Solar System](http://codepen.io/waynedunkley/pen/YPJWaz) by Wayne Dunkley 
+- using [Full CSS 3D Solar System](http://codepen.io/waynedunkley/pen/YPJWaz) by Wayne Dunkley
 
 ## Summary
 
-- [General](#general)
-- [Features](#features)
-- [Install](#install)
-- [Configuration](#configuration)
-- [License](#license)
+- [Solar theme](#solar-theme)
+  - [Summary](#summary)
+  - [General](#general)
+  - [Features](#features)
+  - [Demo](#demo)
+  - [Install](#install)
+  - [Configuration](#configuration)
+  - [License](#license)
 
 ## General
 
 - **Version** : 0.1
 - **Compatibility** : Hexo 3 or later
 
-## <Features></Features>
+## Features
 
 - responsive theme with 3D animation in header
 - clean and structure optimized for blog
 
-## Demo 
+## Demo
 
-  -  Demo at [Solar](https://tzvetkov75.github.io/demo_blog/public/)
+- Demo at [Solar](https://kpl0111.github.io/blog)
   
 ## Install
 
 1. In the `root` directory of Hexo:
 
+```shell
+git clone git@github.com:kpl0111/solar.git themes/solar
+npm install hexo-pagination --save
 ```
-$ git clone https://github.com/tzvetkov75/solar-theme-hexo.git themes/solar
-$ npm install hexo-pagination --save
-```
-
-add 
 
 2. Change the `theme` property in the `config.yml` file (hexo config file).
 
-```
+```shell
 theme: solar
 ```
 
